@@ -1,16 +1,18 @@
 class Personagem extends Animacao {
-  constructor(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite) {
-    super(matriz, imagem, x, largura, altura, larguraSprite, alturaSprite)
-    this.yInicial = height - this.altura;
+  constructor(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite) {
+    super(matriz, imagem, x, variacaoY, largura, altura, larguraSprite, alturaSprite)
+    this.variacaoY = variacaoY;
+    this.yInicial = height - this.altura - this.variacaoY;
     this.y = this.yInicial;
     this.velocidadeDoPulo = 0;
-    this.gravidade = 3;
+    this.gravidade = 6;
     this.puloDuplo = 2;
+    this.alturaDoPulo = -50;
   }
 
   pula() {
     if (this.puloDuplo > 0) {
-      this.velocidadeDoPulo = -30;
+      this.velocidadeDoPulo = this.alturaDoPulo;
       this.puloDuplo--;
       return true;
     }
@@ -42,6 +44,6 @@ class Personagem extends Animacao {
       inimigo.altura * precisao
     )
     
-    return colisao
+    return colisao;
   }
 }

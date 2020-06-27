@@ -7,8 +7,8 @@ class Cenario {
   }
 
   exibe() {
-    image(this.imagem, this.x1, 0, width, height);
-    image(this.imagem, this.x2, 0, width, height);
+    image(this.imagem, this.x1, 0, width + 10, height);
+    image(this.imagem, this.x2, 0, width +10 , height);
   }
 
   move() {
