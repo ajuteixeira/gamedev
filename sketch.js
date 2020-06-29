@@ -1,15 +1,18 @@
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  frameRate(40);
-  somDoJogo.loop();
-  jogo = new Jogo();
   telaInicial = new TelaInicial();
-  jogo.setup();
+  jogo = new Jogo();
+  botaoGerenciador = new BotaoGerenciador('iniciar', width / 2, height / 2);
+
   cenas = {
     jogo,
     telaInicial
   };
-  botaoGerenciador = new BotaoGerenciador('iniciar', width / 2, height / 2);
+
+  jogo.setup();
+  frameRate(40);
+  somDoJogo.loop();
+  somDoJogo.setVolume(0.2);
 }
 
 function keyPressed() {

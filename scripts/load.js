@@ -12,11 +12,15 @@ function preload() {
   imagemCenarioLuzes2 = loadImage('imagens/cenario/cenarioLuzes2.png');
   imagemGameOver = loadImage('imagens/assets/game-over.png');
   imagemPersonagem = loadImage('imagens/personagem/correndo.png');
+  imagemPersonagemColisao = loadImage('imagens/personagem/colisao.png');
   imagemInimigo = loadImage('imagens/inimigos/gotinha.png');
   imagemInimigoTroll = loadImage('imagens/inimigos/troll.png');
   imagemInimigoVoador = loadImage('imagens/inimigos/gotinha-voadora.png');
   imagemTelaInicial = loadImage('imagens/cenario/telaInicial.png');
+  imagemVida = loadImage('imagens/assets/vida.png');
   fonteTelaInicial = loadFont('imagens/assets/fonteTelaInicial.otf');
+  
+  fita = loadJSON('fita/fita.json');
   somDoJogo = loadSound('sons/trilha_jogo.mp3');
   somDoPulo = loadSound('sons/somDoPulo.mp3');
 }

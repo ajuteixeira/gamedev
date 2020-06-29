@@ -10,20 +10,24 @@ let imagemCenario9;
 let imagemCenarioLuzes1;
 let imagemCenarioLuzes2;
 let imagemPersonagem;
+let imagemPersonagemColisao;
 let imagemInimigo;
 let imagemInimigoTroll;
 let imagemInimigoVoador;
 let imagemTelaInicial;
+let imagemVida;
 let fonteTelaInicial;
 let imagemGameOver;
 let somDoPulo;
 let somDoJogo;
 let jogo;
+let fita;
 
 let cenaAtual = 'telaInicial';
 let cenas;
 let telaInicial;
 let botaoGerenciador;
+let vida;
 
 let personagem;
 let inimigo;
